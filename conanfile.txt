@@ -9,5 +9,5 @@ bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" 
 lib, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
 lib, *.dylib* -> ./lib # Copies all dylib files from packages lib folder to my "lib" folder
 lib, *.so* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
-bin, *test* -> ./bin # also copy the ubitrack tests as an example
+bin, ut* -> ./bin # Copies all applications
 share/Ubitrack, *.* -> ./share/Ubitrack # copy all shared ubitrack files 
