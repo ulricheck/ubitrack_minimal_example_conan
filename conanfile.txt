@@ -5,6 +5,7 @@ ubitrack_dataflow/1.3.0@ubitrack/stable
 ubitrack_facade/1.3.0@ubitrack/stable
 ubitrack_visualization/1.3.0@ubitrack/stable
 ubitrack_component_core/1.3.0@ubitrack/stable
+ubitrack_component_vision/1.3.0@ubitrack/stable
 
 [imports]
 bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
