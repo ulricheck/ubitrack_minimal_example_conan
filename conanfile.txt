@@ -4,6 +4,7 @@ ubitrack_tools_trackman/1.0@ubitrack/stable
 
 [options]
 ubitrack:with_default_camera=True
+ubitrack:with_haptic_calibration=True
 
 [generators]
 ubitrack_virtualenv_generator
