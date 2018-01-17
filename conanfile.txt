@@ -4,6 +4,8 @@ ubitrack_tools_trackman/1.0@ubitrack/stable
 
 [options]
 ubitrack:with_default_camera=True
+ubitrack:with_camera_flycapture=True
+ubitrack:with_camera_directshow=False
 
 [generators]
 ubitrack_virtualenv_generator
@@ -14,4 +16,5 @@ lib, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" 
 lib, *.dylib* -> ./lib # Copies all dylib files from packages lib folder to my "lib" folder
 lib, *.so* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
 bin, ut* -> ./bin # Copies all applications
+bin, log4cpp.conf -> ./ # copy a logging config template
 share/Ubitrack, *.* -> ./share/Ubitrack # copy all shared ubitrack files 
