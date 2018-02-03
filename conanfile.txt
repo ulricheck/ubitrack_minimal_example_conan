@@ -1,7 +1,7 @@
 [requires]
 ubitrack/1.3.0@ubitrack/stable
 ubitrack_tools_trackman/1.0@ubitrack/stable
-ubitrack_lang_boost_python/1.3.0@ubitrack/stable
+#ubitrack_lang_boost_python/1.3.0@ubitrack/stable
 
 [options]
 ubitrack:with_default_camera=True
@@ -9,7 +9,8 @@ ubitrack:with_camera_flycapture=True
 ubitrack:with_camera_directshow=False
 ubitrack:with_haptic_calibration=True
 ubitrack:with_python=True
-ubitrack_lang_boost_python:python=python3
+Boost:python=C:\ProgramData\Anaconda3\python.exe
+#ubitrack_lang_boost_python:python=python3
 
 [generators]
 ubitrack_virtualenv_generator
