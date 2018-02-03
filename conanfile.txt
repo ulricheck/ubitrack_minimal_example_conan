@@ -1,12 +1,15 @@
 [requires]
 ubitrack/1.3.0@ubitrack/stable
 ubitrack_tools_trackman/1.0@ubitrack/stable
+ubitrack_lang_boost_python/1.3.0@ubitrack/stable
 
 [options]
 ubitrack:with_default_camera=True
 ubitrack:with_camera_flycapture=True
 ubitrack:with_camera_directshow=False
 ubitrack:with_haptic_calibration=True
+ubitrack:with_python=True
+ubitrack_lang_boost_python:python=python3
 
 [generators]
 ubitrack_virtualenv_generator
@@ -17,5 +20,12 @@ lib, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" 
 lib, *.dylib* -> ./lib # Copies all dylib files from packages lib folder to my "lib" folder
 lib, *.so* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
 bin, ut* -> ./bin # Copies all applications
+<<<<<<< HEAD
 bin, log4cpp.conf -> ./ # copy a logging config template
 share/Ubitrack, *.* -> ./share/Ubitrack # copy all shared ubitrack files 
+=======
+share/Ubitrack, *.* -> ./share/Ubitrack # copy all shared ubitrack files
+lib/python*, *.so -> ./lib # copy all python files 
+lib/python*, *.pyd -> ./lib # copy all python files 
+lib/python*, *.py -> ./lib # copy all python files 
+>>>>>>> 43814bbc8d0af5c1e25869ba98e3dcd2915155b4
