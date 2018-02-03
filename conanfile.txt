@@ -20,12 +20,8 @@ lib, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" 
 lib, *.dylib* -> ./lib # Copies all dylib files from packages lib folder to my "lib" folder
 lib, *.so* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
 bin, ut* -> ./bin # Copies all applications
-<<<<<<< HEAD
 bin, log4cpp.conf -> ./ # copy a logging config template
 share/Ubitrack, *.* -> ./share/Ubitrack # copy all shared ubitrack files 
-=======
-share/Ubitrack, *.* -> ./share/Ubitrack # copy all shared ubitrack files
 lib/python*, *.so -> ./lib # copy all python files 
 lib/python*, *.pyd -> ./lib # copy all python files 
 lib/python*, *.py -> ./lib # copy all python files 
->>>>>>> 43814bbc8d0af5c1e25869ba98e3dcd2915155b4
