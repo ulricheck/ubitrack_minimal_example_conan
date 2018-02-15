@@ -7,6 +7,7 @@ ubitrack_tools_trackman/1.0@ubitrack/stable
 ubitrack:with_default_camera=True
 ubitrack:with_camera_flycapture=True
 ubitrack:with_camera_directshow=False
+ubitrack:with_camera_kinect2=True
 ubitrack:with_haptic_calibration=True
 ubitrack:with_python=True
 Boost:python=C:\ProgramData\Anaconda3\python.exe
