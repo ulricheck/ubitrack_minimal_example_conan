@@ -1,7 +1,7 @@
 [requires]
 ubitrack/1.3.0@ubitrack/stable
 ubitrack_tools_trackman/1.0@ubitrack/stable
-#ubitrack_lang_boost_python/1.3.0@ubitrack/stable
+ubitrack_lang_python/1.3.0@ubitrack/stable
 
 [options]
 ubitrack:with_default_camera=True
@@ -9,9 +9,7 @@ ubitrack:with_camera_flycapture=True
 ubitrack:with_camera_directshow=False
 ubitrack:with_camera_kinect2=True
 ubitrack:with_haptic_calibration=True
-ubitrack:with_python=True
-Boost:python=C:\ProgramData\Anaconda3\python.exe
-#ubitrack_lang_boost_python:python=C:\ProgramData\Anaconda3\python.exe
+ubitrack_lang_python:python=C:\ProgramData\Anaconda3\python.exe
 
 [generators]
 ubitrack_virtualenv_generator
@@ -19,11 +17,7 @@ ubitrack_virtualenv_generator
 [imports]
 bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
 lib, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
-lib, *.dylib* -> ./lib # Copies all dylib files from packages lib folder to my "lib" folder
-lib, *.so* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
-bin, ut* -> ./bin # Copies all applications
+bin, *.exe -> ./bin # Copies all applications
 bin, log4cpp.conf -> ./ # copy a logging config template
 share/Ubitrack, *.* -> ./share/Ubitrack # copy all shared ubitrack files 
-lib/python*, *.so -> ./lib # copy all python files 
-lib/python*, *.pyd -> ./lib # copy all python files 
-lib/python*, *.py -> ./lib # copy all python files 
+lib/python*, *.pyd -> ./lib/python # copy all python files 
